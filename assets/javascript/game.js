@@ -45,10 +45,11 @@ var vader = {
 
 };
 
-// $("#luke").append(luke);
 
-$("img").click(function() {
-	var health = this.getAttribute("data-hp");
-	console.log(health);
+$("button").click(function() {
+	$("button").attr("status","attacker")
+	var test = $("button").attr("status");
+	console.log(test);
+
 	});
 
