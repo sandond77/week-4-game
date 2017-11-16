@@ -28,27 +28,29 @@
 </div>
 
 <div class="container">
-	<div class="row justify-content-center">
-	  	<button type="button" class="btn btn-outline-success" data-hp="100" data-AP="5" data-CAP = "5" data-status="enemy" data-status2="idle">
-	  		<div id="luke"> Luke Skywalker </div>
+	<div class="row justify-content-center enemies">
+	  	<button type="button" class="btn btn-outline-success luke" data-hp="100" data-AP="5" data-CAP = "5" data-status="enemy" data-status2="idle">
+	  		<div> Luke Skywalker </div>
 	  		<img src="assets/images/luke.png" class="img-responsive characters">
 	  		<div id="lukehp"> 100hp </div>
 	  	</button>
-	    <button type="button" class="btn btn-outline-danger" data-hp="175" data-AP="20" data-CAP = "20" data-status="enemy" data-status2="idle">
-	  		<div id="vader"> Darth Vader </div>
+	    <button type="button" class="btn btn-outline-danger vader" data-hp="175" data-AP="20" data-CAP = "20" data-status="enemy" data-status2="idle">
+	  		<div> Darth Vader </div>
 	    	<img src="assets/images/vader.jpg" class="img-responsive characters">
 	  		<div id="vaderhp"> 175hp </div>
 	    </button>
-	    <button type="button" class="btn btn-outline-info" data-hp="125" data-AP="10" data-CAP = "10" data-status="enemy" data-status2="idle">
-	  		<div id="obi"> Obi-Wan Kenobi </div>
+	    <button type="button" class="btn btn-outline-info obi" data-hp="125" data-AP="10" data-CAP = "10" data-status="enemy" data-status2="idle">
+	  		<div> Obi-Wan Kenobi </div>
 	    	<img src="assets/images/oldobi.jpg" class="img-responsive characters">
-	    	<div id="obihp"> 125hp </div>
+	    	<div> 125hp </div>
 	    </button>
-	    <button type="button" class="btn btn-outline-danger"  data-hp="150" data-AP="15" data-CAP = "15" data-status="enemy" data-status2="idle">
-	  		<div id="maul"> Darth Maul </div>
+	    <button type="button" class="btn btn-outline-danger maul"  data-hp="150" data-AP="15" data-CAP = "15" data-status="enemy" data-status2="idle">
+	  		<div> Darth Maul </div>
 	    	<img src="assets/images/darthmaul.jpg" class="img-responsive characters">
-	    	<div id="maulhp"> 150hp </div>
+	    	<div> 150hp </div>
 	    </button>
+		<div class="enemies">
+		</div>
 	</div>
 
 	<div class="row">
@@ -58,7 +60,7 @@
 
 	<div class="row justify-content-center">
 		<div class="col-5 bg-light">
-			<div class="chosen">
+			<div class="chosen text-center">
 				<h4> Your Character </h4>
 			</div>
 			<div class="attacker">
@@ -66,11 +68,8 @@
 			</div>
 		</div>
 		<div class="col-5 bg-danger">
-			<div class="defender">
+			<div class="defender text-center">
 				<h4> Defender </h4>
-			</div>
-			<div class="enemies">
-				<h4> Enemies </h4>
 			</div>
 		</div>
 	</div>

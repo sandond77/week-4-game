@@ -46,10 +46,15 @@ var vader = {
 };
 
 
-$("button").click(function() {
-	$("button").attr("status","attacker")
-	var test = $("button").attr("status");
+$("button").one("click", function() {
+	$("button").addClass("attacker")
+	var test = $("button").attr("class");
 	console.log(test);
 
-	});
+	if ($("button").hasClass("attacker") === true) {
+		($(".chosen").append(this)) ;
+		($(this).css("background-color","blue"));
+		($(this).css("color","white"));
+	};
+});
 
